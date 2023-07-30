@@ -1,0 +1,6 @@
+/home/imenko_prezimenovic/visit/bin/MCNPplugin/CMakeFiles/rebuild_cache.dir
+/home/imenko_prezimenovic/visit/bin/MCNPplugin/CMakeFiles/edit_cache.dir
+/home/imenko_prezimenovic/visit/bin/MCNPplugin/CMakeFiles/EMCNPDatabase_par.dir
+/home/imenko_prezimenovic/visit/bin/MCNPplugin/CMakeFiles/EMCNPDatabase_ser.dir
+/home/imenko_prezimenovic/visit/bin/MCNPplugin/CMakeFiles/MMCNPDatabase.dir
+/home/imenko_prezimenovic/visit/bin/MCNPplugin/CMakeFiles/IMCNPDatabase.dir

@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MCNPplugin_database",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "EMCNPpluginDatabase_par::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EMCNPpluginDatabase_par-Debug-c0ed5184ba1aac356935.json",
+					"name" : "EMCNPpluginDatabase_par",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EMCNPpluginDatabase_ser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EMCNPpluginDatabase_ser-Debug-b6feadb4d6ab91a0fb5e.json",
+					"name" : "EMCNPpluginDatabase_ser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IMCNPpluginDatabase::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IMCNPpluginDatabase-Debug-5d95b27353a8a96c4150.json",
+					"name" : "IMCNPpluginDatabase",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MMCNPpluginDatabase::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MMCNPpluginDatabase-Debug-1f4c23bf69ae1e32db7c.json",
+					"name" : "MMCNPpluginDatabase",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/imenko_prezimenovic/visit/bin/MCNPplugin/build",
+		"source" : "/home/imenko_prezimenovic/visit/bin/MCNPplugin"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

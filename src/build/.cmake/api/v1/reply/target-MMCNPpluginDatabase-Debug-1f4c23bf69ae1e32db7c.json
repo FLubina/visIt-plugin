@@ -1,0 +1,461 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/imenko_prezimenovic/.visit/3.1.4/linux-x86_64/plugins/databases/libMMCNPpluginDatabase.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"LINK_DIRECTORIES",
+			"set_property",
+			"ADD_TARGET_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/VisItMacros.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC  "
+				},
+				{
+					"fragment" : "-std=gnu++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "MDSERVER"
+				},
+				{
+					"define" : "MMCNPpluginDatabase_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/bin/MCNPplugin"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/Exceptions/Database"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/Exceptions/Pipeline"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/Exceptions/Plotter"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/comm"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/expr"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/icons"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/misc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/parser"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/plugin"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/proxybase"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/state"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/common/utility"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/zlib/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/DBAtts/MetaData"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/DBAtts/SIL"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Database/Database"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Database/Formats"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Database/Ghost"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/FileWriter"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Filters"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/MIR/Base"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/MIR/Tet"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/MIR/Zoo"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Math"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Pipeline/AbstractFilters"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Pipeline/Data"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Pipeline/Pipeline"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Pipeline/Sinks"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/Pipeline/Sources"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/avt/VisWindow/VisWindow"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/visit_vtk/full"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/visit/visit_vtk/lightweight"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/vtkh/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/vtkm/include/vtkm-1.2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/vtkm/include/vtkm-1.2/vtkm/thirdparty/taotuple"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/include/vtk/vtk-8.1"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"id" : "MMCNPpluginDatabase::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvisitcommon",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lavtdbatts",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lavtdatabase_ser",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lavtmir_ser",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvisit_verdict",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lavtpipeline_ser",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lavtdbatts",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lavtmath",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkCommonDataModel-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkCommonMath-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkCommonTransforms-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkFiltersGeometry-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvisit_vtk",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-llightweight_visit_vtk",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvisitcommon",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkCommonCore-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkFiltersCore-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkIOCore-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkIOLegacy-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkCommonExecutionModel-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkCommonMisc-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkFiltersExtraction-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkFiltersFlowPaths-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkFiltersSources-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkImagingHybrid-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtkIOImage-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lvtktiff-8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/archives/libIlmImf.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/archives/libImath.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/archives/libHalf.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/archives/libIlmThread.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/imenko_prezimenovic/visit/3.1.4/linux-x86_64/archives/libIex.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltess2",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "MMCNPpluginDatabase",
+	"nameOnDisk" : "libMMCNPpluginDatabase.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MCNPpluginMDServerPluginInfo.C",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MCNPpluginPluginInfo.C",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MCNPpluginCommonPluginInfo.C",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "avtMCNPpluginFileFormat.C",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
