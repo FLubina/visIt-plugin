@@ -30,7 +30,9 @@
 
 #include <DebugStream.h>
 
+
 #define MARK_LEN 32
+#define _SIZE(arr) sizeof(arr) / sizeof(float)
 
 
 using     std::string;
@@ -70,6 +72,7 @@ avtMCNPFileFormat::ActivateTimestep(){
 void
 avtMCNPFileFormat::Initialize(){
     if(!initialized){
+
         infile.open(
             avtMCNPFileFormat::filename
         );
@@ -128,7 +131,7 @@ avtMCNPFileFormat::FreeUpResources(void)
 void
 avtMCNPFileFormat::PopulateDatabaseMetaData(avtDatabaseMetaData *md)
 {
-    Initialize();
+    // Initialize();
     string meshname = "MCNP mesh";
     
     
@@ -173,9 +176,7 @@ avtMCNPFileFormat::GetMesh(const char *meshname)
 
     ReadData();
 
-    int ndims = 3;
-
-    int dims[3] = {x.size(), y.size(), z.size()};
+    int dims[3] = {(int)x.size(), (int)y.size(), (int)z.size()};
     vtkFloatArray *coords[3] = {0, 0, 0};
         
 
@@ -234,13 +235,30 @@ avtMCNPFileFormat::GetVar(const char *varname)
     vtkFloatArray *arr = vtkFloatArray::New();
     arr->SetNumberOfTuples(nvals);
     float *data = (float *)arr->GetVoidPointer(0);
-    for (int i = 1 ; i < nvals ; i++)
+    for (int i = 0 ; i < nvals ; i++)
     {
+        // if(i %10000 == 0)
+        //     cout << relErr.at(i) << endl;
+
+        // if(strcmp(varname, "flux") == 0)
+        //     arr->SetTuple1(i, value.at(i));
+        // else if(strcmp(varname, "relative error") == 0)
+        //     arr->SetTuple1(i, relErr.at(i));
+
         if(strcmp(varname, "flux") == 0)
-            arr->SetTuple1(i, value.at(i));
+            data[i] = value.at(i);
         else if(strcmp(varname, "relative error") == 0)
-            arr->SetTuple1(i, relErr.at(i));
+            data[i] = relErr.at(i);
+
     }
+    // cout << "--------------- array -------------------" << endl;
+    // for (int i = 0; i < _SIZE(arr); i++)
+    // {
+    //     if(i % 1000 == 0)
+    //         cout << data[i] << endl;
+    // }
+    
+    // cout << "----------------------------------------------------------" << endl;
     
     return arr;
 }
@@ -305,6 +323,9 @@ avtMCNPFileFormat::ReadData(){
 
     float tempValue, tempErr;
     char line[2048];
+
+    // cout << "++++++++++++READING DATA++++++++++++++++++" << endl;
+    // int i = 0;
     while(!infile.eof()){
         infile.getline(line, 2048);
 
@@ -313,9 +334,15 @@ avtMCNPFileFormat::ReadData(){
 
         sscanf(line, "%*f %*f %*f %f %f", &tempValue, &tempErr);
 
+        // if(i % 10000 == 0)
+        //     cout << "val:" << tempValue << " err:" << tempErr << endl;
+        // i++;
+
         value.push_back(tempValue);
         relErr.push_back(tempErr);
     }
+    // cout << "+++++++++++++++++++++++++++++++++++++++++++" << endl;
+
 
 }
 
@@ -381,5 +408,4 @@ void ReadHeader(){
 
         temp = convertToString(line, MARK_LEN - 1);
     }
-    
 }
