@@ -2,9 +2,9 @@
 // Project developers.  See the top-level LICENSE file for dates and other
 // details.  No copyright assignment is required to contribute to VisIt.
 
-// ****************************************************************************
+// ************************************************************************* //
 //  File: MCNPPluginInfo.C
-// ****************************************************************************
+// ************************************************************************* //
 
 #include <MCNPPluginInfo.h>
 
@@ -119,7 +119,7 @@ std::vector<std::string>
 MCNPGeneralPluginInfo::GetDefaultFilePatterns() const
 {
     std::vector<std::string> defaultPatterns;
-    defaultPatterns.push_back("*.");
+    defaultPatterns.push_back("*.mcnp");
 
     return defaultPatterns;
 }
