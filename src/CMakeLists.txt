@@ -4,27 +4,27 @@ SET(VISIT_PLUGIN_DIR "C:/Users/B1llG/AppData/Roaming/LLNL/VisIt")
 INCLUDE("C:/Program Files/LLNL/VisIt3.3.3/include/PluginVsInstall.cmake")
 INCLUDE("C:/Program Files/LLNL/VisIt3.3.3/include/VisItLibraryDependencies.cmake")
 
-PROJECT(MCNPplugin_database)
+PROJECT(MCNP_database)
 
 SET(COMMON_SOURCES
-MCNPpluginPluginInfo.C
-MCNPpluginCommonPluginInfo.C
+MCNPPluginInfo.C
+MCNPCommonPluginInfo.C
 )
 
 SET(LIBI_SOURCES
-MCNPpluginPluginInfo.C
+MCNPPluginInfo.C
 )
 
 SET(LIBM_SOURCES
-MCNPpluginMDServerPluginInfo.C
+MCNPMDServerPluginInfo.C
 ${COMMON_SOURCES}
-avtMCNPpluginFileFormat.C
+avtMCNPFileFormat.C
 )
 
 SET(LIBE_SOURCES
-MCNPpluginEnginePluginInfo.C
+MCNPEnginePluginInfo.C
 ${COMMON_SOURCES}
-avtMCNPpluginFileFormat.C
+avtMCNPFileFormat.C
 )
 
 INCLUDE_DIRECTORIES(
@@ -34,27 +34,27 @@ ${VISIT_DATABASE_INCLUDES}
 
 LINK_DIRECTORIES(${VISIT_LIBRARY_DIR} )
 
-ADD_LIBRARY(IMCNPpluginDatabase ${LIBI_SOURCES})
-TARGET_LINK_LIBRARIES(IMCNPpluginDatabase visitcommon)
-SET(INSTALLTARGETS IMCNPpluginDatabase)
+ADD_LIBRARY(IMCNPDatabase ${LIBI_SOURCES})
+TARGET_LINK_LIBRARIES(IMCNPDatabase visitcommon)
+SET(INSTALLTARGETS IMCNPDatabase)
 
 IF(NOT VISIT_ENGINE_ONLY AND NOT VISIT_DBIO_ONLY)
-    ADD_LIBRARY(MMCNPpluginDatabase ${LIBM_SOURCES})
-    TARGET_LINK_LIBRARIES(MMCNPpluginDatabase visitcommon avtdbatts avtdatabase_ser )
-    ADD_TARGET_DEFINITIONS(MMCNPpluginDatabase MDSERVER)
-    SET(INSTALLTARGETS ${INSTALLTARGETS} MMCNPpluginDatabase)
+    ADD_LIBRARY(MMCNPDatabase ${LIBM_SOURCES})
+    TARGET_LINK_LIBRARIES(MMCNPDatabase visitcommon avtdbatts avtdatabase_ser )
+    ADD_TARGET_DEFINITIONS(MMCNPDatabase MDSERVER)
+    SET(INSTALLTARGETS ${INSTALLTARGETS} MMCNPDatabase)
 ENDIF(NOT VISIT_ENGINE_ONLY AND NOT VISIT_DBIO_ONLY)
 
-ADD_LIBRARY(EMCNPpluginDatabase_ser ${LIBE_SOURCES})
-TARGET_LINK_LIBRARIES(EMCNPpluginDatabase_ser visitcommon avtpipeline_ser avtdatabase_ser )
-ADD_TARGET_DEFINITIONS(EMCNPpluginDatabase_ser ENGINE)
-SET(INSTALLTARGETS ${INSTALLTARGETS} EMCNPpluginDatabase_ser)
+ADD_LIBRARY(EMCNPDatabase_ser ${LIBE_SOURCES})
+TARGET_LINK_LIBRARIES(EMCNPDatabase_ser visitcommon avtpipeline_ser avtdatabase_ser )
+ADD_TARGET_DEFINITIONS(EMCNPDatabase_ser ENGINE)
+SET(INSTALLTARGETS ${INSTALLTARGETS} EMCNPDatabase_ser)
 
 IF(VISIT_PARALLEL)
-    ADD_PARALLEL_LIBRARY(EMCNPpluginDatabase_par ${LIBE_SOURCES})
-    TARGET_LINK_LIBRARIES(EMCNPpluginDatabase_par visitcommon avtpipeline_par avtdatabase_par )
-    ADD_TARGET_DEFINITIONS(EMCNPpluginDatabase_par ENGINE)
-    SET(INSTALLTARGETS ${INSTALLTARGETS} EMCNPpluginDatabase_par)
+    ADD_PARALLEL_LIBRARY(EMCNPDatabase_par ${LIBE_SOURCES})
+    TARGET_LINK_LIBRARIES(EMCNPDatabase_par visitcommon avtpipeline_par avtdatabase_par )
+    ADD_TARGET_DEFINITIONS(EMCNPDatabase_par ENGINE)
+    SET(INSTALLTARGETS ${INSTALLTARGETS} EMCNPDatabase_par)
 ENDIF(VISIT_PARALLEL)
 
 VISIT_INSTALL_DATABASE_PLUGINS(${INSTALLTARGETS})
