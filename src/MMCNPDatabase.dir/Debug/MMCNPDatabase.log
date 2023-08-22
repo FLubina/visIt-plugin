@@ -1,0 +1,12 @@
+﻿  Building Custom Rule C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeLists.txt
+  MCNPMDServerPluginInfo.C
+  MCNPPluginInfo.C
+  MCNPCommonPluginInfo.C
+  avtMCNPFileFormat.C
+C:\Users\B1llG\Desktop\visIt-plugin\src\avtMCNPFileFormat.C(234): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\B1llG\Desktop\visIt-plugin\src\avtMCNPFileFormat.C(380): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\B1llG\Desktop\visIt-plugin\src\avtMCNPFileFormat.C(388): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\B1llG\Desktop\visIt-plugin\src\avtMCNPFileFormat.C(398): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+     Creating library C:/Users/B1llG/Desktop/visIt-plugin/src/Debug/MMCNPDatabase.lib and object C:/Users/B1llG/Desktop/visIt-plugin/src/Debug/MMCNPDatabase.exp
+  MMCNPDatabase.vcxproj -> C:\Users\B1llG\AppData\Roaming\LLNL\VisIt\databases\MMCNPDatabase.dll
