@@ -1,6 +1,0 @@
-C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/IMCNPDatabase.dir
-C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/MMCNPDatabase.dir
-C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/EMCNPDatabase_ser.dir
-C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/EMCNPDatabase_par.dir
-C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/ALL_BUILD.dir
-C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/ZERO_CHECK.dir
