@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\B1llG\Desktop\visIt-plugin\src\MCNPEnginePluginInfo.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\B1llG\Desktop\visIt-plugin\src\MCNPPluginInfo.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\B1llG\Desktop\visIt-plugin\src\MCNPCommonPluginInfo.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\B1llG\Desktop\visIt-plugin\src\avtMCNPFileFormat.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B1llG\Desktop\visIt-plugin\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DDCEE2AC-50D9-3394-8DCA-E3E800D9FE61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
