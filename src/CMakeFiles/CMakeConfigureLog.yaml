@@ -26,7 +26,11 @@ events:
       Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
+<<<<<<< HEAD
       Build started 22/08/2023 11:53:20.
+=======
+      Build started 21/08/2023 17:12:43.
+>>>>>>> parent of a3751b6 (del all)
       Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\3.27.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -52,7 +56,11 @@ events:
           0 Warning(s)
           0 Error(s)
       
+<<<<<<< HEAD
       Time Elapsed 00:00:00.89
+=======
+      Time Elapsed 00:00:01.33
+>>>>>>> parent of a3751b6 (del all)
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,7 +88,11 @@ events:
       Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
+<<<<<<< HEAD
       Build started 22/08/2023 11:53:21.
+=======
+      Build started 21/08/2023 17:12:45.
+>>>>>>> parent of a3751b6 (del all)
       Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\3.27.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -106,7 +118,11 @@ events:
           0 Warning(s)
           0 Error(s)
       
+<<<<<<< HEAD
       Time Elapsed 00:00:00.54
+=======
+      Time Elapsed 00:00:00.48
+>>>>>>> parent of a3751b6 (del all)
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +141,13 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-2c3yve"
       binary: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-2c3yve"
+=======
+      source: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-b6m30j"
+      binary: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-b6m30j"
+>>>>>>> parent of a3751b6 (del all)
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -135,6 +156,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-2c3yve'
         
         Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" cmTC_22553.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:n
@@ -164,12 +186,47 @@ events:
           Deleting file "cmTC_22553.dir\\Debug\\cmTC_22553.tlog\\unsuccessfulbuild".
           Touching "cmTC_22553.dir\\Debug\\cmTC_22553.tlog\\cmTC_22553.lastbuildstate".
         Done Building Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-2c3yve\\cmTC_22553.vcxproj" (default targets).
+=======
+        Change Dir: 'C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-b6m30j'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" cmTC_6428e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:n
+        Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 21/08/2023 17:12:46.
+        Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-b6m30j\\cmTC_6428e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6428e.dir\\Debug\\".
+          Creating directory "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-b6m30j\\Debug\\".
+          Creating directory "cmTC_6428e.dir\\Debug\\cmTC_6428e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6428e.dir\\Debug\\cmTC_6428e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6428e.dir\\Debug\\\\" /Fd"cmTC_6428e.dir\\Debug\\vc141.pdb" /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27050 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          
+          cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6428e.dir\\Debug\\\\" /Fd"cmTC_6428e.dir\\Debug\\vc141.pdb" /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+          
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-b6m30j\\Debug\\cmTC_6428e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-b6m30j/Debug/cmTC_6428e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-b6m30j/Debug/cmTC_6428e.lib" /MACHINE:X64  /machine:x64 cmTC_6428e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_6428e.vcxproj -> C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-b6m30j\\Debug\\cmTC_6428e.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_6428e.dir\\Debug\\cmTC_6428e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6428e.dir\\Debug\\cmTC_6428e.tlog\\cmTC_6428e.lastbuildstate".
+        Done Building Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-b6m30j\\cmTC_6428e.vcxproj" (default targets).
+>>>>>>> parent of a3751b6 (del all)
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
+<<<<<<< HEAD
         Time Elapsed 00:00:00.76
+=======
+        Time Elapsed 00:00:00.88
+>>>>>>> parent of a3751b6 (del all)
         
       exitCode: 0
   -
@@ -181,8 +238,13 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-2o8eq9"
       binary: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-2o8eq9"
+=======
+      source: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-yf45uy"
+      binary: "C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-yf45uy"
+>>>>>>> parent of a3751b6 (del all)
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -191,6 +253,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-2o8eq9'
         
         Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" cmTC_93b6b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:n
@@ -220,12 +283,47 @@ events:
           Deleting file "cmTC_93b6b.dir\\Debug\\cmTC_93b6b.tlog\\unsuccessfulbuild".
           Touching "cmTC_93b6b.dir\\Debug\\cmTC_93b6b.tlog\\cmTC_93b6b.lastbuildstate".
         Done Building Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-2o8eq9\\cmTC_93b6b.vcxproj" (default targets).
+=======
+        Change Dir: 'C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-yf45uy'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" cmTC_9d79b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:n
+        Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 21/08/2023 17:12:47.
+        Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-yf45uy\\cmTC_9d79b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9d79b.dir\\Debug\\".
+          Creating directory "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-yf45uy\\Debug\\".
+          Creating directory "cmTC_9d79b.dir\\Debug\\cmTC_9d79b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9d79b.dir\\Debug\\cmTC_9d79b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_9d79b.dir\\Debug\\\\" /Fd"cmTC_9d79b.dir\\Debug\\vc141.pdb" /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27050 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          
+          cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_9d79b.dir\\Debug\\\\" /Fd"cmTC_9d79b.dir\\Debug\\vc141.pdb" /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+          
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-yf45uy\\Debug\\cmTC_9d79b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-yf45uy/Debug/cmTC_9d79b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/B1llG/Desktop/visIt-plugin/src/CMakeFiles/CMakeScratch/TryCompile-yf45uy/Debug/cmTC_9d79b.lib" /MACHINE:X64  /machine:x64 cmTC_9d79b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_9d79b.vcxproj -> C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-yf45uy\\Debug\\cmTC_9d79b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_9d79b.dir\\Debug\\cmTC_9d79b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9d79b.dir\\Debug\\cmTC_9d79b.tlog\\cmTC_9d79b.lastbuildstate".
+        Done Building Project "C:\\Users\\B1llG\\Desktop\\visIt-plugin\\src\\CMakeFiles\\CMakeScratch\\TryCompile-yf45uy\\cmTC_9d79b.vcxproj" (default targets).
+>>>>>>> parent of a3751b6 (del all)
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
+<<<<<<< HEAD
         Time Elapsed 00:00:00.79
+=======
+        Time Elapsed 00:00:00.65
+>>>>>>> parent of a3751b6 (del all)
         
       exitCode: 0
 ...
