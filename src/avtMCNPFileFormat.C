@@ -16,7 +16,6 @@
 #include <vtkUnstructuredGrid.h>
 #include <vtkPoints.h>
 
-//ne vidi VTK_VERTEX bez ovog, nezz zasto
 #include <vtkAppendPolyData.h>
 
 
