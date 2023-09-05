@@ -1,6 +1,7 @@
 \documentclass[times, utf8, zavrsni]{fer}
 \usepackage{booktabs}
 \usepackage{float}
+\usepackage{enumitem}
 
 \begin{document}
 
@@ -29,13 +30,31 @@ Testiranje se vrši pomoću aplikacije Sekuli IDE, koja snima klikove i druge in
 	\begin{table}[H]
         \centering
         \def\arraystretch{1.5}
-        \begin{tabular}{|l|p{80pt}| p{120pt} | p{120pt} |}
+        \begin{tabular}{|l|p{80pt}| p{100pt} | p{120pt} |}
         \hline
         rbr & opis & slijed naredbi & moguće greške\\ \hline
-        1. & Otvaranje datoteke i učitavanje podataka & open -> reopen -> apply operator ->     reopen & neispravno učitane vrijednosti: sve vrijednosti minimalne\\
+        1. & Otvaranje datoteke i učitavanje podataka &
+         \begin{enumerate}
+         	\item open
+         	\item reopen
+         	\item operators
+         	\item slice
+         	\item reopen
+         \end{enumerate}
+         & neispravno učitane vrijednosti: sve vrijednosti minimalne\\
         \hline
-        2. & Mijenjanje skale & plotAtts -> pseudocolor -> linear/log -> reopen -> linear/log & nesipravne ili neučitane vrijednosti za neke predjele u mesh-u.\\
-        \hline
+         2. & Mijenjanje skale & \begin{enumerate}
+        \item plotAtts
+        \item pseudocolor
+        \item linear/log
+        \item reopen
+        \item linear/log
+        \item operators
+        \item slice
+        \item linear/log
+        \end{enumerate}
+        & nesipravne ili neučitane vrijednosti za neke predjele u mesh-u.\\
+    \hline
         \end{tabular}
         \caption{Testni slučajevi}
         \end{table}
