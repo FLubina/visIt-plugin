@@ -1,5 +1,6 @@
 \documentclass[times, utf8, zavrsni]{fer}
 \usepackage{booktabs}
+\usepackage{float}
 
 \begin{document}
 
@@ -24,7 +25,21 @@
 
 \chapter{Testiranje}
 Testiranje se vrši pomoću aplikacije Sekuli IDE, koja snima klikove i druge interakcije sa grafičkim sučeljem te na temelju njih stvara skripte pomoću kojih se automatizira testiranje
-
+	
+	\begin{table}[H]
+        \centering
+        \def\arraystretch{1.5}
+        \begin{tabular}{|l|p{80pt}| p{120pt} | p{120pt} |}
+        \hline
+        rbr & opis & slijed naredbi & moguće greške\\ \hline
+        1. & Otvaranje datoteke i učitavanje podataka & open -> reopen -> apply operator ->     reopen & neispravno učitane vrijednosti: sve vrijednosti minimalne\\
+        \hline
+        2. & Mijenjanje skale & plotAtts -> pseudocolor -> linear/log -> reopen -> linear/log & nesipravne ili neučitane vrijednosti za neke predjele u mesh-u.\\
+        \hline
+        \end{tabular}
+        \caption{Testni slučajevi}
+        \end{table}
+	
 
 
 \chapter{Instalacija}
