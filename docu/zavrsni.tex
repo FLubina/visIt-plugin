@@ -2,6 +2,7 @@
 \usepackage{booktabs}
 \usepackage{float}
 \usepackage{enumitem}
+\usepackage{longtable}
 
 \begin{document}
 
@@ -25,39 +26,71 @@
 \chapter{Uvod}
 
 \chapter{Testiranje}
-Testiranje se vrši pomoću aplikacije Sekuli IDE, koja snima klikove i druge interakcije sa grafičkim sučeljem te na temelju njih stvara skripte pomoću kojih se automatizira testiranje
+Testiranje se vrši pomoću aplikacije Sekuli IDE, koja snima klikove i druge interakcije sa grafičkim sučeljem te na temelju njih stvara skripte pomoću kojih se automatizira testiranje.
+Isti skup testova izvodi se nad nizom mreža.
 	
-	\begin{table}[H]
-        \centering
-        \def\arraystretch{1.5}
-        \begin{tabular}{|l|p{80pt}| p{100pt} | p{120pt} |}
-        \hline
-        rbr & opis & slijed naredbi & moguće greške\\ \hline
-        1. & Otvaranje datoteke i učitavanje podataka &
-         \begin{enumerate}
-         	\item open
-         	\item reopen
-         	\item operators
-         	\item slice
-         	\item reopen
-         \end{enumerate}
-         & neispravno učitane vrijednosti: sve vrijednosti minimalne\\
-        \hline
-         2. & Mijenjanje skale & \begin{enumerate}
-        \item plotAtts
-        \item pseudocolor
-        \item linear/log
-        \item reopen
-        \item linear/log
-        \item operators
-        \item slice
-        \item linear/log
-        \end{enumerate}
-        & nesipravne ili neučitane vrijednosti za neke predjele u mesh-u.\\
-    \hline
-        \end{tabular}
-        \caption{Testni slučajevi}
-        \end{table}
+	\begin{longtable}{|l|p{80pt}|p{100pt}|p{120pt}|}
+\hline
+rbr & opis & slijed naredbi & moguće greške\\
+\hline
+\endhead % This repeats the header on each page
+1. & Otvaranje datoteke i učitavanje podataka &
+\begin{enumerate}
+    \item open
+    \item reopen
+    \item operators
+    \item slice
+    \item reopen
+\end{enumerate}
+& neispravno učitane vrijednosti: sve vrijednosti minimalne\\
+\hline
+2. & Mijenjanje skale & \begin{enumerate}
+    \item plotAtts
+    \item pseudocolor
+    \item linear/log
+    \item reopen
+    \item linear/log
+    \item operators
+    \item slice
+    \item linear/log
+\end{enumerate}
+& nesipravne ili neučitane vrijednosti za neke predjele u mesh-u.\\
+\hline
+3. & Minimalna i maksimalna vrijednost & \begin{enumerate}
+    \item Controls
+    \item Query
+    \item MinMax
+    \item operators
+    \item slice
+    \item operators
+    \item MinMax
+\end{enumerate}
+& --.\\
+\hline
+4. & Selektiranje volumena vrijednosti u određenom rasponu & \begin{enumerate}
+    \item operators
+    \item isovolume
+    \item reopen
+    \item plotAtts
+    \item pseudocolor
+    \item linear/log
+    \item reopen
+    \item linear/log
+\end{enumerate}
+& --.\\
+\hline
+5. & Sphere tool slice & \begin{enumerate}
+	\item sphere tool    
+    \item operators
+    \item slice
+    \item plotAtts
+    \item log
+    \item Query
+    \item MinMax
+\end{enumerate}
+& --.\\
+\hline
+\end{longtable}
 	
 
 
