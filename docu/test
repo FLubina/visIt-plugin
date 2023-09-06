@@ -1,0 +1,6 @@
+test 1:
+	random otvori, zatvori, operator
+test 2*:
+	linear-log
+	post¬linear¬log
+x
