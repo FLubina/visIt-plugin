@@ -48,7 +48,7 @@ class MCNPCommonPluginInfo : public virtual CommonDatabasePluginInfo, public vir
     virtual DatabaseType              GetDatabaseType();
     virtual avtDatabase              *SetupDatabase(const char * const *list,
                                                     int nList, int nBlock);
-    virtual std::string               GetLicense() const;
+    /*virtual std::string               GetLicense() const;*/
 };
 
 class MCNPMDServerPluginInfo : public virtual MDServerDatabasePluginInfo, public virtual MCNPCommonPluginInfo
