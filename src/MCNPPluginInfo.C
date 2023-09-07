@@ -119,7 +119,7 @@ std::vector<std::string>
 MCNPGeneralPluginInfo::GetDefaultFilePatterns() const
 {
     std::vector<std::string> defaultPatterns;
-    defaultPatterns.push_back("*.*");
+    defaultPatterns.push_back("*");
 
     return defaultPatterns;
 }
