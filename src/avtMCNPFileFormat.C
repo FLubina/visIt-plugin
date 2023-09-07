@@ -184,20 +184,20 @@ avtMCNPFileFormat::GetMesh(const char *meshname)
     coords[0]->SetNumberOfTuples(dims[0]);
     float *xarray = (float *)coords[0]->GetVoidPointer(0);
 
-    for(int i = 0; i < x.size(); i++)
+    for(int i = 0; i < dims[0]; i++)
         xarray[i] = x.at(i);
 
     coords[1] = vtkFloatArray::New();
     coords[1]->SetNumberOfTuples(dims[1]);
     float *yarray = (float *)coords[1]->GetVoidPointer(0);
-    for(int i = 0; i < x.size(); i++)
+    for(int i = 0; i < dims[1]; i++)
         yarray[i] = y.at(i);
 
     coords[2] = vtkFloatArray::New();
     coords[2]->SetNumberOfTuples(dims[2]);
     float *zarray = (float *)coords[2]->GetVoidPointer(0);
 
-    for(int i = 0; i < x.size(); i++)
+    for(int i = 0; i < dims[2]; i++)
         zarray[i] = z.at(i);
 
     vtkRectilinearGrid *rgrid = vtkRectilinearGrid::New();
