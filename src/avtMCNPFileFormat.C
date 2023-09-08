@@ -16,7 +16,6 @@
 #include <vtkUnstructuredGrid.h>
 #include <vtkPoints.h>
 
-//ne vidi VTK_VERTEX bez ovog, nezz zasto
 #include <vtkAppendPolyData.h>
 
 
@@ -176,14 +175,16 @@ avtMCNPFileFormat::GetMesh(const char *meshname)
 
     ReadData();
 
-    int dims[3] = {(int)x.size(), (int)y.size(), (int)z.size()};
+    int dims[3] = {1, 1, 1};
     vtkFloatArray *coords[3] = {0, 0, 0};
-        
+
+    dims[0] = x.size();
+    dims[1] = y.size();
+    dims[2] = z.size();
 
     coords[0] = vtkFloatArray::New();
     coords[0]->SetNumberOfTuples(dims[0]);
     float *xarray = (float *)coords[0]->GetVoidPointer(0);
-
     for(int i = 0; i < dims[0]; i++)
         xarray[i] = x.at(i);
 
@@ -196,12 +197,16 @@ avtMCNPFileFormat::GetMesh(const char *meshname)
     coords[2] = vtkFloatArray::New();
     coords[2]->SetNumberOfTuples(dims[2]);
     float *zarray = (float *)coords[2]->GetVoidPointer(0);
-
     for(int i = 0; i < dims[2]; i++)
         zarray[i] = z.at(i);
 
     vtkRectilinearGrid *rgrid = vtkRectilinearGrid::New();
     rgrid->SetDimensions(dims);
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     debug1 << "+++++++++++++++++++++DIMENSIONS " << i << ": " << dims[i] << endl;
+    // }
+    
     rgrid->SetXCoordinates(coords[0]);
     coords[0]->Delete();
     rgrid->SetYCoordinates(coords[1]);
