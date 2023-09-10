@@ -391,7 +391,8 @@ void ReadHeader(){
         temp = convertToString(line, xDir.length());
         if(temp.compare(xDir) == 0){
             ss << line;
-            for(; !ss.eof(); ss >> temp2){
+            for(; !ss.eof();){
+				ss >> temp2;
                 if(stringstream(temp2) >> number)
                     x.push_back(number);
             }
@@ -401,7 +402,8 @@ void ReadHeader(){
             ss.clear();
             ss << line;
             temp2 = "?";
-            for(; !ss.eof(); ss >> temp2){
+            for(; !ss.eof();){
+				ss >> temp2;
                 if(stringstream(temp2) >> number)
                     y.push_back(number);
             }
@@ -411,7 +413,8 @@ void ReadHeader(){
             ss.clear();
             ss << line;
             temp2 = "?";
-            for(; !ss.eof(); ss >> temp2){
+            for(; !ss.eof();){
+				ss >> temp2;
                 if(stringstream(temp2) >> number)
                     z.push_back(number);
             }
