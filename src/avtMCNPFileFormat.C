@@ -1,3 +1,4 @@
+
 // Copyright (c) Lawrence Livermore National Security, LLC and other VisIt
 // Project developers.  See the top-level LICENSE file for dates and other
 // details.  No copyright assignment is required to contribute to VisIt.
@@ -181,6 +182,16 @@ avtMCNPFileFormat::GetMesh(const char *meshname)
     dims[0] = x.size();
     dims[1] = y.size();
     dims[2] = z.size();
+	for (int i = 0; i < 3; i++)
+	{
+		debug1 << "++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+		debug1 << "[DIMENSIONS " << i << ":] " << i << ": " << dims[i] << endl;
+		for (int j = 0; j < dims[i]; j++)
+		{
+			debug1 << x.at(i) << endl;
+		}
+		debug1 << "++++++++++++++++++++++++++++++++++++++++++++++++++++" << endl;
+	}
 
     coords[0] = vtkFloatArray::New();
     coords[0]->SetNumberOfTuples(dims[0]);
@@ -201,12 +212,7 @@ avtMCNPFileFormat::GetMesh(const char *meshname)
         zarray[i] = z.at(i);
 
     vtkRectilinearGrid *rgrid = vtkRectilinearGrid::New();
-    rgrid->SetDimensions(dims);
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     debug1 << "+++++++++++++++++++++DIMENSIONS " << i << ": " << dims[i] << endl;
-    // }
-    
+	rgrid->SetDimensions(dims);
     rgrid->SetXCoordinates(coords[0]);
     coords[0]->Delete();
     rgrid->SetYCoordinates(coords[1]);
