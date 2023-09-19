@@ -122,7 +122,7 @@ rbr & opis & slijed naredbi & moguće greške\\
 Napomene:
 \begin{itemize}
 	\item installer pokrenut kao administrator
-	\item x64 arhitektura računala
+	\item x64 arhitektura procesora
 \end{itemize}
 \section{česte greške}
 \begin{longtable}{|p{100pt}|p{180pt}|}
@@ -136,6 +136,13 @@ Napomene:
 	\hline
 	\endhead % This repeats the header on each page 
 \end{longtable}
+
+\chapter{Izmjene u izvornom kodu}
+Zbog nemogućnosti da se automatski prepoznaju, koristeći format naziva MCNP datoteka (bez ekstenzije - "*.*") potrebno je modificirati izvorni kod.
+
+Naime mehanizam koji uspoređuje naziva datoteka sa željenim uzorcima nije u mogućnosti raditi sa uzorcima koji definiraju nizove koji smiju sadržavati sve znakove osim nekog znaka.
+
+
 
 \chapter{Zaključak}
 Zaključak.
