@@ -1,0 +1,5 @@
+SetQueryFloatFormat("%g")
+Query("MinMax", use_actual_data=1)
+AddOperator("Slice", 1)
+DrawPlots()
+Query("MinMax", use_actual_data=1)
