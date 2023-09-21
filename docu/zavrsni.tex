@@ -26,7 +26,7 @@
 \chapter{Uvod}
 
 \chapter{Testiranje}
-Testiranje se vrši pomoću aplikacije Sikuli IDE, koja snima klikove i druge interakcije sa grafičkim sučeljem te na temelju njih stvara skripte pomoću kojih se automatizira testiranje.
+Testiranje se vrši pomoću pyhton skripta, odnosno ugrađenog pyhton CLI-a unutar programa VisIt.
 Isti skup testova izvodi se nad nizom mreža.
 	
 	\begin{longtable}{|l|p{80pt}|p{100pt}|p{120pt}|}
@@ -122,20 +122,8 @@ rbr & opis & slijed naredbi & moguće greške\\
 Napomene:
 \begin{itemize}
 	\item installer pokrenut kao administrator
-	\item x86_64 arhitektura skupa naredbi (svi Intel/AMD procesori)
+	\item x64 arhitektura skupa naredbi (svi Intel ili AMD procesori)
 \end{itemize}
-\section{česte greške}
-\begin{longtable}{|p{100pt}|p{180pt}|}
-	\hline
-	greška & rješenje\\
-	\hline
-	\hline
-	-- & lorem ipsum\\
-	\hline
-	-- & lorem ipsum\\
-	\hline
-	\endhead % This repeats the header on each page 
-\end{longtable}
 
 \chapter{Izmjene u izvornom kodu}
 Zbog nemogućnosti da se automatski prepoznaju, koristeći format naziva MCNP datoteka (bez ekstenzije - "*.*") potrebno je modificirati izvorni kod.
