@@ -122,8 +122,15 @@ Zbog nemogućnosti da se automatski prepoznaju, koristeći format naziva MCNP da
 
 Naime mehanizam koji uspoređuje naziva datoteka sa željenim uzorcima nije u mogućnosti raditi sa uzorcima koji definiraju nizove koji smiju sadržavati sve znakove osim nekog znaka.
 
-Potrebno je regresijsko testiranje database engine-a
-Testirani su idući formati: mcnp, pdb, silo
+Potrebno je regresijsko testiranje database engine-a.
+	\begin{longtable}{|l|p{70pt}|p{100pt}|p{100pt}| p{100pt}|}
+	\hline
+	rbr & format & ekstenzije & VisIt3.3.3 & Ipsravno\\
+	\hline
+	\endhead % This repeats the header on each page
+	1. & ADIOS2 & .bp, .bp.sst, .bp.ssc, md.idx, md.0 & -- & --\\
+	\hline
+\end{longtable}
 
 
 \chapter{Instalacija}
