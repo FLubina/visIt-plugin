@@ -3,6 +3,11 @@
 \usepackage{float}
 \usepackage{enumitem}
 \usepackage{longtable}
+\usepackage{appendix}
+\usepackage{array}
+\usepackage{article}
+\newcounter{rown}
+\newcommand{\row}[2]{\stepcounter{rown}\arabic{rown} & #1 & #2 \\}
 
 \begin{document}
 
@@ -123,14 +128,8 @@ Zbog nemogućnosti da se automatski prepoznaju, koristeći format naziva MCNP da
 Naime mehanizam koji uspoređuje naziva datoteka sa željenim uzorcima nije u mogućnosti raditi sa uzorcima koji definiraju nizove koji smiju sadržavati sve znakove osim nekog znaka.
 
 Potrebno je regresijsko testiranje database engine-a.
-	\begin{longtable}{|l|p{70pt}|p{100pt}|p{100pt}| p{100pt}|}
-	\hline
-	rbr & format & ekstenzije & VisIt3.3.3 & Ipsravno\\
-	\hline
-	\endhead % This repeats the header on each page
-	1. & ADIOS2 & .bp, .bp.sst, .bp.ssc, md.idx, md.0 & -- & --\\
-	\hline
-\end{longtable}
+Tablica sa testiranim plugin-ima je dostupna u dodatku A.
+Svaki plugin testiran je nad datotekom sa nasumičnim imenom od 10 znakova (brojevi i slova) i odgovarajućom ekstenzijom.
 
 
 \chapter{Instalacija}
@@ -166,5 +165,32 @@ The development of that plug-in is the subject of this thesis.
 
 \keywords{VisIt, MCNP, mesh tally}
 \end{abstract}
+
+\appendix
+\chapter{Lista testiranih plugin-a pri regresijskom testiranju}
+\begin{longtable}{|l|p{70pt}|p{100pt}|p{100pt}| p{100pt}|}
+	\hline
+	rbr & format & ekstenzije & VisIt3.3.3 & Ipsravno\\
+	\hline
+	\endhead % This repeats the header on each page
+	1. & ADIOS2 & .bp, .bp.sst, .bp.ssc, md.idx, md.0 & ADIOS2, Silo & --\\
+	\hline
+	2. & volimage & .curl, 3D.ux, 3D.uy, 3D.uz, 3D.rho, 3D.p, 3D.s, 3D.div, 3D.curl, 3D.mag, 3D.veldiv, 3D.velcurl, 3D.velmag, 3D.z & OK & OK\\
+	\hline
+	3. & paraDIS\_tecplot & .fld, .field, .cyl, .cylinder, .dat & OK & OK\\
+	\hline
+	4. & unv & .unv, .unv.gz, .iv, .msh & OK & OK\\
+	\hline
+	5. & MFEM & .mfem_root, .mesh & MFEM, Silo & --\\
+	\hline
+	6. & ffp & .rcs, .rcs.gz, .ffp, .ffp.gz & OK & OK\\
+	\hline
+	7. & ZeusMP & .rcs, .rcs.gz, .ffp, .ffp.gz & ZeusMP, Silo & --\\
+	\hline
+	8. & COSMOS & .cosmos & COSMOS, Silo & --\\
+	\hline
+	9. & sw4img & .sw4img, .3Dimg & sw4img, Silo & --\\
+	\hline
+\end{longtable}
 
 \end{document}
