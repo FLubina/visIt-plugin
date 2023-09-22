@@ -117,6 +117,13 @@ rbr & opis & slijed naredbi & greške\\
 \hline
 \end{longtable}
 	
+\section{Izmjene u izvornom kodu}
+Zbog nemogućnosti da se automatski prepoznaju, koristeći format naziva MCNP datoteka (bez ekstenzije - "*.*") potrebno je modificirati izvorni kod.
+
+Naime mehanizam koji uspoređuje naziva datoteka sa željenim uzorcima nije u mogućnosti raditi sa uzorcima koji definiraju nizove koji smiju sadržavati sve znakove osim nekog znaka.
+
+Potrebno je regresijsko testiranje database engine-a
+Testirani su idući formati: mcnp, pdb, silo
 
 
 \chapter{Instalacija}
