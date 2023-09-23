@@ -122,11 +122,11 @@ Rubrika greške ukazuje na greške koje su se prije pojavljivale, no u međuvrem
 \section{Izmjene u izvornom kodu}
 Zbog nemogućnosti da se automatski prepoznaju, koristeći format naziva MCNP datoteka (bez ekstenzije - "*.*") potrebno je modificirati izvorni kod.
 
-Naime mehanizam koji uspoređuje naziva datoteka sa željenim uzorcima nije u mogućnosti raditi sa uzorcima koji definiraju nizove koji smiju sadržavati sve znakove osim nekog znaka.
+Naime kod koji uspoređuje nazive datoteka sa uzorcima koji definiraju ispravne nazive datoteka za pojedini plugin nije u mogućnosti raditi sa uzorcima koji definiraju nizove koji smiju sadržavati sve znakove osim nekog znaka.
 
 Potrebno je regresijsko testiranje database engine-a.
-Tablica sa testiranim plugin-ima je dostupna u dodatku A.
-Svaki plugin testiran je nad datotekom sa nasumičnim imenom od 10 znakova (brojevi i slova) i odgovarajućom ekstenzijom.
+Tablica sa testiranim plugin-ovima je dostupna u dodatku A.
+Svaki plugin testiran je nad datotekom sa nasumičnim imenom od maksimalno 15 znakova čija kombinacija čini valjano ime datoteke na Windowsu (brojevi, slova i par posebnih znakova) te odgovarajućom ekstenzijom.
 
 
 \chapter{Instalacija}
@@ -164,7 +164,7 @@ The development of that plug-in is the subject of this thesis.
 \end{abstract}
 
 \appendix
-\chapter{Lista testiranih plugin-a pri regresijskom testiranju}
+\chapter{Tablica testiranih plugin-a pri regresijskom testiranju}
 \begin{longtable}{|l|p{70pt}|p{100pt}|p{100pt}| p{100pt}|}
 	\hline
 	\textbf{rbr} & \textbf{format} & \textbf{ekstenzije} & \textbf{sa izmjenama koda} & \textbf{bez izmjena koda}\\
