@@ -4,10 +4,7 @@
 \usepackage{enumitem}
 \usepackage{longtable}
 \usepackage{appendix}
-\usepackage{array}
-\usepackage{article}
-\newcounter{rown}
-\newcommand{\row}[2]{\stepcounter{rown}\arabic{rown} & #1 & #2 \\}
+\usepackage[table]{xcolor}
 
 \begin{document}
 
@@ -37,7 +34,7 @@ Rubrika greške ukazuje na greške koje su se prije pojavljivale, no u međuvrem
 	
 	\begin{longtable}{|l|p{80pt}|p{100pt}|p{120pt}|}
 \hline
-rbr & opis & slijed naredbi & greške\\
+\textbf{rbr} & \textbf{opis} & \textbf{slijed naredbi} & \textbf{greške}\\
 \hline
 \endhead % This repeats the header on each page
 1. & Otvaranje datoteke i učitavanje podataka &
@@ -170,26 +167,33 @@ The development of that plug-in is the subject of this thesis.
 \chapter{Lista testiranih plugin-a pri regresijskom testiranju}
 \begin{longtable}{|l|p{70pt}|p{100pt}|p{100pt}| p{100pt}|}
 	\hline
-	rbr & format & ekstenzije & VisIt3.3.3 & Ipsravno\\
+	\textbf{rbr} & \textbf{format} & \textbf{ekstenzije} & \textbf{sa izmjenama koda} & \textbf{bez izmjena koda}\\
 	\hline
 	\endhead % This repeats the header on each page
-	1. & ADIOS2 & .bp, .bp.sst, .bp.ssc, md.idx, md.0 & ADIOS2, Silo & --\\
+	1. & ADIOS2 & .bp, .bp.sst, .bp.ssc, md.idx, md.0 & \cellcolor{yellow} ADIOS2, Silo & \cellcolor{yellow} ADIOS2, Silo\\
 	\hline
-	2. & volimage & .curl, 3D.ux, 3D.uy, 3D.uz, 3D.rho, 3D.p, 3D.s, 3D.div, 3D.curl, 3D.mag, 3D.veldiv, 3D.velcurl, 3D.velmag, 3D.z & OK & OK\\
+	2. & volimage & .curl, 3D.ux, 3D.uy, 3D.uz, 3D.rho, 3D.p, 3D.s, 3D.div, 3D.curl, 3D.mag, 3D.veldiv, 3D.velcurl, 3D.velmag, 3D.z & \cellcolor{green} OK & \cellcolor{green}OK\\
 	\hline
-	3. & paraDIS\_tecplot & .fld, .field, .cyl, .cylinder, .dat & OK & OK\\
+	3. & paraDIS\_tecplot & .fld, .field, .cyl, .cylinder, .dat & \cellcolor{green} OK & \cellcolor{green} OK\\
 	\hline
-	4. & unv & .unv, .unv.gz, .iv, .msh & OK & OK\\
+	4. & unv & .unv, .unv.gz, .iv, .msh & \cellcolor{green} OK & \cellcolor{green} OK\\
 	\hline
-	5. & MFEM & .mfem_root, .mesh & MFEM, Silo & --\\
+	5. & MFEM & .mfem\_root, .mesh & \cellcolor{yellow} MFEM, Silo & \cellcolor{yellow} MFEM, Silo\\
 	\hline
-	6. & ffp & .rcs, .rcs.gz, .ffp, .ffp.gz & OK & OK\\
+	6. & ffp & .rcs, .rcs.gz, .ffp, .ffp.gz & \cellcolor{green} OK & \cellcolor{green} OK\\
 	\hline
-	7. & ZeusMP & .rcs, .rcs.gz, .ffp, .ffp.gz & ZeusMP, Silo & --\\
+	7. & ZeusMP & .rcs, .rcs.gz, .ffp, .ffp.gz & \cellcolor{yellow} ZeusMP, Silo & \cellcolor{yellow} ZeusMP, Silo\\
 	\hline
-	8. & COSMOS & .cosmos & COSMOS, Silo & --\\
+	8. & COSMOS & .cosmos & \cellcolor{yellow} COSMOS, Silo & \cellcolor{yellow} COSMOS, Silo\\
 	\hline
-	9. & sw4img & .sw4img, .3Dimg & sw4img, Silo & --\\
+	\hline
+	9. & lata & .lml, .lata & \cellcolor{yellow} lata, Silo & \cellcolor{yellow} lata, Silo\\
+	\hline
+	10. & XDMF & .xmf, .xdmf & \cellcolor{yellow} XDMF, Silo & \cellcolor{yellow} XDMF, Silo\\
+	\hline
+	11. & RAGE & .xmf, .xdmf & \cellcolor{yellow} RAGE, Silo & \cellcolor{yellow} RAGE, Silo\\
+	\hline
+	12. & paraDIS & .prds, .dat, .data, .meta & \cellcolor{green} OK & \cellcolor{green} OK \\
 	\hline
 \end{longtable}
 
