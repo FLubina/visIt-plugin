@@ -16,3 +16,4 @@ wait(1)
 click("1693929796633.png")
 type(Key.UP)
 type(Key.ENTER)
+#obsolete
