@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "avtMCNPFileFormat.C": "cpp",
+        "MCNPPluginInfo.C": "cpp"
+    }
+}
